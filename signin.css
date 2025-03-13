@@ -1,0 +1,91 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0C2C4C, #E97D23);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+
+input[type="radio"] {
+    display: none;
+}
+
+
+.form-content {
+    display: none;
+}
+#signin:checked ~ #signin-form,
+#create-account:checked ~ #create-account-form,
+#forgot-password:checked ~ #forgot-password-form {
+    display: block;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Sign-in Button */
+.signin-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signin-btn:hover {
+    background-color: #45a049;
+}
+
+/* Links */
+.forgot-password, .create-account, .back-to-signin {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.forgot-password label, .create-account label, .back-to-signin label {
+    color: #4CAF50;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.forgot-password label:hover, .create-account label:hover, .back-to-signin label:hover {
+    text-decoration: underline;
+}
